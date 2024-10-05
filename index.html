@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapInsight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> <!-- GSAP CDN -->
+</head>
+<body>
+    <main>
+        <h1>&lt;<span>/</span>&gt; <span>Snap</span>Insight</span></h1>
+        
+        <form id="uploadForm">
+            <label for="image">Evaluate  your  image  or  get  and explanation:</label>
+            <input type="file" id="image" accept="image/*" required>
+            <label for="details">Additional  Details:</label>
+            <textarea id="details" rows="4" cols="50" placeholder="Enter any additional instructions or comments..." required></textarea>
+            
+            <!-- Uploaded Image Preview -->
+            <div class="spinner" id="spinner" style="display: none;"></div>
+            <hr>
+            <input type="button" id="getResult" value="Evaluate">
+
+            <div id="imagePreviewContainer" class="image-preview-container" style="display: none;">
+                <h2>Uploaded Image:</h2>
+                <img id="imagePreview" src="" alt="Uploaded Image Preview" class="image-preview" style="display: none;">
+            </div>
+        </form>
+        
+
+        <!-- Result will be in this div: -->
+        <div id="result"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
