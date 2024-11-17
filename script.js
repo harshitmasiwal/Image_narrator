@@ -1,6 +1,6 @@
 document.getElementById('getResult').addEventListener('click', function() {
 
-    const geminiAPIkey = "AIzaSyDHd6nDgQfdYLfTmzKrCSvblJzRs5rjCaI"; 
+    const geminiAPIkey = "xxxxxxxxxxxxxxxxxxxxxxx"; 
     const geminiAIModel = "gemini-1.5-flash"; 
     const imageInput = document.getElementById('image');
     const details = document.getElementById('details').value;
